@@ -1,0 +1,99 @@
+.header {
+    background-color: $black;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: $font-logo;
+        line-height: 1.2;
+
+        &:hover {
+            color: white;
+        }
+
+        &_img {
+            width: 40px;
+        }
+
+        &_block {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        &_title {}
+
+        &_subtitle {
+            color: $yellow;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        line-height: 1;
+
+        &_main {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        &_second {
+            color: white;
+            font-size: 24px;
+        }
+    }
+
+    &__review {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+
+        &_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_icon {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+            margin-bottom: 8px;
+        }
+
+        &_text {
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_number {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        &_content {
+            font-size: 14px;
+            height: 20px;
+        }
+    }
+
+}

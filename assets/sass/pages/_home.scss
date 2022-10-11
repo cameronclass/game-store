@@ -1,0 +1,268 @@
+.advantages {
+    background-color: #1A1A17;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+
+    &-icon-left {
+        position: absolute;
+        left: 0;
+        height: 277px;
+        width: auto;
+    }
+
+    &-icon-right {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 235px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        color: $grey;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 95%;
+
+        &_icon {
+            min-width: 100px;
+            width: auto;
+            height: 74px;
+            object-fit: contain;
+        }
+
+        &_text {
+            margin-left: 20px;
+        }
+    }
+}
+
+.form {
+    background-color: $black;
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    &-icon-right {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 515px;
+    }
+
+    &-main {
+        width: 100%;
+        max-width: 628px;
+
+        &__block {
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            width: 100%;
+        }
+
+        &__text {
+            color: $grey;
+            text-align: right;
+        }
+
+        &__money {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &_title {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            &_block {
+                width: 40%;
+            }
+
+            &_button {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__submit {
+            display: flex;
+            justify-content: center;
+
+            &_btn {
+                padding: 15px 45px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.how-works {
+    padding-top: 60px;
+    padding-bottom: 0px;
+    background-color: #191917;
+    color: white;
+    text-align: center;
+    position: relative;
+
+    &-icon {
+        position: absolute;
+        top: 0;
+        width: 515px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__title {
+        font-size: 44px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 120px;
+        position: relative;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+        height: 42px;
+        line-height: 1.2;
+    }
+
+    &__icon {
+        width: auto;
+        height: 128px;
+        object-fit: contain;
+    }
+
+    &__arrow {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+        position: absolute;
+
+        &.to-bottom {
+            transform: rotate(90deg);
+        }
+
+        &.to-top {
+            transform: rotate(-90deg);
+        }
+
+        &.to-right {
+            transform: rotate(0deg);
+        }
+
+        &.to-left {
+            transform: rotate(180deg);
+        }
+
+        &_bottom {
+            bottom: 30px;
+        }
+
+        &_right {
+            right: -30px;
+            top: 30%;
+        }
+
+        &_bottom {
+            bottom: 30px;
+        }
+
+        &_bottom {
+            bottom: 30px;
+        }
+    }
+}
+
+.faq {
+    background-color: $black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+
+    &-icon {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 700px;
+    }
+
+    &__title {
+        font-size: 44px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 60px;
+        color: white;
+    }
+}
+
+.accordion {
+
+    &__item {
+        margin-bottom: 20px;
+
+        &_header {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &_title {
+            background-color: $yellow;
+            padding: 20px 30px;
+            border-radius: 15px;
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        &_icon {
+            border: 1px solid $yellow;
+            min-width: 76px;
+            min-height: 76px;
+            max-width: 76px;
+            max-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-left: 20px;
+
+            &_img {
+                width: 30px;
+                height: 30px;
+                transform: rotate(90deg);
+            }
+        }
+
+        &_content {
+            display: none;
+        }
+    }
+}

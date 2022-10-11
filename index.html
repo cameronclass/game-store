@@ -31,16 +31,210 @@
   <link rel="stylesheet" href="assets/css/libs.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Fonts and Icons-->
-  <title>New Project</title>
+  <title>Spartagames Store</title>
 </head>
 
 <body>
   <!-- Header -->
   <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <a href="#" class="header__logo">
+            <img class="header__logo_img" src="assets/img/logo.svg" alt="">
+            <span class="header__logo_block">
+              <span class="header__logo_title">spartagames</span>
+              <span class="yellow-text">store</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <div class="header__title">
+            <h1 class="header__title_main">Надежное пополнение <span class="yellow-text">Steam</span> аккаунта</h1>
+            <span class="header__title_second">Или вернем деньги!</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__review">
+            <div class="header__review_block">
+              <img src="assets/img/icon/positive.svg" class="header__review_icon">
+              <div class="header__review_text">
+                <span class="header__review_number">115</span>
+                <span class="header__review_content">Довольных клиентов</span>
+              </div>
+            </div>
+            <div class="header__review_block ms-4">
+              <img src="assets/img/icon/money.svg" class="header__review_icon">
+              <div class="header__review_text">
+                <span class="header__review_number">259</span>
+                <span class="header__review_content">Пополнений</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- Main -->
   <main class="main">
-    <section>
+    <!-- Наши преимущества -->
+    <section class="advantages">
+      <img class="advantages-icon-left" src="assets/img/icon/radius.svg" alt="">
+      <img class="advantages-icon-right" src="assets/img/icon/plus.svg" alt="">
+      <div class="container z-index-top">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="advantages__card">
+              <img class="advantages__card_icon" src="assets/img/icon/advan-1.svg" alt="Средства отправляются напрямую на банковский счет Steam минуя санкции">
+              <div class="advantages__card_text">
+                Средства отправляются напрямую на банковский счет Steam минуя санкции
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="advantages__card">
+              <img class="advantages__card_icon" src="assets/img/icon/advan-2.svg" alt="Средства отправляются напрямую на банковский счет Steam минуя санкции">
+              <div class="advantages__card_text">
+                Зачисление происходит в течении 3х минут
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="advantages__card">
+              <img class="advantages__card_icon" src="assets/img/icon/advan-3.svg" alt="Гибкая комиссия, чем больше сумма пополнения, тем меньше %">
+              <div class="advantages__card_text">
+                Гибкая комиссия, чем больше сумма пополнения, тем меньше %
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="advantages__card">
+              <img class="advantages__card_icon" src="assets/img/icon/advan-4.svg" alt="Средства отправляются напрямую на банковский счет Steam минуя санкции">
+              <div class="advantages__card_text">
+                Средства отправляются напрямую на банковский счет Steam минуя санкции
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Форма -->
+    <section class="form">
+      <img class="form-icon-right" src="assets/img/icon/dots-right.svg" alt="">
+      <div class="container z-index-top">
+        <div class="form__block">
+          <form action="#" class="form-main">
+            <div class="form-main__block">
+              <input class="input input-big" type="text" required placeholder="Введите имя аккаунта в Steam (не имя пользователя)">
+            </div>
+            <div class="form-main__block mb-4">
+              <button type="button" class="button form-main__button">Проверка аккаунта</button>
+            </div>
+            <div class="form-main__money form-main__block">
+              <div class="form-main__money_block">
+                <div class="form-main__money_title">Заплачу</div>
+                <input class="input input-small form-main__money_input" type="number" required placeholder="1 000 ₽">
+              </div>
+              <div class="form-main__money_button">
+                <button class="button form-main__money_btn" type="button"><img src="assets/img/icon/arrows.svg" alt=""></button>
+              </div>
+              <div class="form-main__money_block">
+                <div class="form-main__money_title">Получу*</div>
+                <input class="input input-small form-main__money_input" type="number" required placeholder="892 ₽">
+              </div>
+            </div>
+            <div class="form-main__buttons form-main__block">
+              <button data-value="50" type="button" class="button form-main__buttons_btn">50 ₽</button>
+              <button data-value="100" type="button" class="button form-main__buttons_btn">100 ₽</button>
+              <button data-value="200" type="button" class="button form-main__buttons_btn">200 ₽</button>
+              <button data-value="500" type="button" class="button form-main__buttons_btn">500 ₽</button>
+              <button data-value="1000" type="button" class="button form-main__buttons_btn">1000 ₽</button>
+            </div>
+            <div class="form-main__text form-main__block">
+              <span>*Комиссия: 50р - 10%, 100р – 9%, 200р – 8%, 500р – 7%, 1000р – 6%</span>
+            </div>
+            <div class="form-main__submit form-main__block mt-5">
+              <button type="submit" class="button form-main__submit_btn">Пополнить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Как это работает? -->
+    <section class="how-works">
+      <img class="how-works-icon" src="assets/img/icon/dots-top.svg" alt="">
+      <div class="container z-index-top">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="how-works__item">
+              <div class="how-works__subtitle">Вы оплачиваете <b>пополнение</b></div>
+              <img class="how-works__icon" src="assets/img/icon/pay-money.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_bottom to-bottom" src="assets/img/icon/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="how-works__title">Как это <span class="yellow-text">работает</span>?</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="how-works__item">
+              <div class="how-works__subtitle">Steam зачисляет деньги на аккаунт</div>
+              <img class="how-works__icon" src="assets/img/icon/gamepad.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_bottom to-top" src="assets/img/icon/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="how-works__item">
+              <div class="how-works__subtitle">Мы <b>принимаем</b> средства в банке РФ</div>
+              <img class="how-works__icon" src="assets/img/icon/bank.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_right to-right" src="assets/img/icon/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="how-works__item">
+              <div class="how-works__subtitle"><b>Отправляем</b> средства в банк Азии</div>
+              <img class="how-works__icon" src="assets/img/icon/pagoda.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_right to-right" src="assets/img/icon/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="how-works__item">
+              <div class="how-works__subtitle">Банк Азии зачисляет средства на банковский счет <b>Steam</b></div>
+              <img class="how-works__icon" src="assets/img/icon/steam.svg" alt="">
+              <img class="how-works__arrow d-none" src="assets/img/icon/arrow-right.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Часто задаваемые вопросы -->
+    <section class="faq">
+      <img class="faq-icon" src="assets/img/icon/line.svg" alt="">
+      <div class="container z-index-top">
+        <h2 class="faq__title">Часто задаваемые <span class="yellow-text">вопросы</span></h2>
+        <div class="accordion">
+
+          <div class="accordion__item">
+            <div class="accordion__item_header">
+              <div class="accordion__item_title">Через какое время будет пополнен баланс?</div>
+              <span class="accordion__item_icon"><img class="accordion__item_icon_img" src="assets/img/icon/arrow-right.svg" alt=""></span>
+            </div>
+            <div class="accordion__item_content">
+              Моментально после, ващ баланс будет пополнен, но не исключаем случаи, когда баланс может прийти с задержками, просьба не волноваться и дождаться, в крайнем случае обратится в “Техничискую поддержку”
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div class="accordion__item_header">
+              <div class="accordion__item_title">Title 1</div>
+              <span class="accordion__item_icon"><img class="accordion__item_icon_img" src="assets/img/icon/arrow-right.svg" alt=""></span>
+            </div>
+            <div class="accordion__item_content">
+              Content 1
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
   <!-- Footer -->
