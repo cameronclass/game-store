@@ -8,9 +8,43 @@
     text-align: center;
     cursor: pointer;
     border: 1px solid $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: $black;
+
+    @include tablet {
+        font-size: 16px;
+        padding: 8px 15px;
+        border-radius: 7px;
+    }
+
+    @include mobile {
+        font-size: 16px;
+        padding: 6px 10px;
+        border-radius: 7px;
+    }
 
     &:hover {
         color: $black;
         background-color: $yellow;
+    }
+
+    &__icon {
+        width: auto;
+        height: 24px;
+    }
+
+    &__hovered {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 100%;
+
+        @include tablet {
+            right: -50px;
+        }
     }
 }

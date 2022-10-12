@@ -1,0 +1,70 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2B2B26;
+    color: $grey;
+
+    &__pay {
+        display: flex;
+        justify-content: flex-end;
+
+        &_item {
+            max-width: 80px;
+            width: auto;
+            height: 45px;
+            margin-left: 30px;
+        }
+    }
+
+    &__rights {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        height: 100%;
+
+        @include tablet {
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 30px;
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+
+    &__menu {
+        color: $grey;
+        text-decoration: none;
+        width: 50%;
+        font-size: 18px;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &__link {
+        color: $grey;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        &:hover {
+            color: white;
+        }
+
+        @include tablet {
+            margin-left: 0;
+        }
+    }
+}

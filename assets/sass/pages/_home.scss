@@ -3,12 +3,22 @@
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    overflow: hidden;
+
+    @include tablet {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
     &-icon-left {
         position: absolute;
         left: 0;
         height: 277px;
         width: auto;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &-icon-right {
@@ -28,15 +38,28 @@
         margin-bottom: 30px;
         width: 95%;
 
+        @include tablet {
+            font-size: 16px;
+        }
+
         &_icon {
             min-width: 100px;
             width: auto;
             height: 74px;
             object-fit: contain;
+
+            @include tablet {
+                height: 55px;
+                min-width: 80px;
+            }
         }
 
         &_text {
             margin-left: 20px;
+
+            @include tablet {
+                margin-left: 10px;
+            }
         }
     }
 }
@@ -46,11 +69,20 @@
     padding-top: 120px;
     padding-bottom: 90px;
 
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
     &-icon-right {
         position: absolute;
         right: 0;
         width: auto;
         height: 515px;
+
+        @include tablet {
+            height: 320px;
+        }
     }
 
     &-main {
@@ -59,6 +91,7 @@
 
         &__block {
             margin-bottom: 15px;
+            position: relative;
         }
 
         &__button {
@@ -68,6 +101,10 @@
         &__text {
             color: $grey;
             text-align: right;
+
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         &__money {
@@ -90,6 +127,18 @@
                 margin-left: 10px;
                 margin-right: 10px;
             }
+
+            &_btn img {
+                filter: invert(75%) sepia(58%) saturate(2177%) hue-rotate(7deg) brightness(107%) contrast(93%);
+
+                @include mobile {
+                    height: 28px;
+                }
+            }
+
+            &_btn:hover img {
+                filter: none;
+            }
         }
 
         &__buttons {
@@ -104,6 +153,21 @@
             &_btn {
                 padding: 15px 45px;
                 font-size: 24px;
+
+                @include tablet {
+                    font-size: 18px;
+                    padding: 10px 30px;
+                }
+            }
+        }
+
+        &__button {
+            &_icon {
+                filter: invert(1);
+            }
+
+            &:hover &_icon {
+                filter: none;
             }
         }
     }
@@ -111,7 +175,19 @@
     &__block {
         display: flex;
         justify-content: center;
+
     }
+
+    &__badge {
+        position: absolute;
+        right: -35px;
+        top: -35px;
+
+        @include tablet {
+            right: 0;
+        }
+    }
+
 }
 
 .how-works {
@@ -121,6 +197,7 @@
     color: white;
     text-align: center;
     position: relative;
+    overflow: hidden;
 
     &-icon {
         position: absolute;
@@ -128,12 +205,25 @@
         width: 515px;
         left: 50%;
         transform: translateX(-50%);
+
+        @include tablet {
+            width: 200px;
+        }
+
     }
 
     &__title {
         font-size: 44px;
         font-weight: bold;
         margin-top: 40px;
+        margin-bottom: 40px;
+        line-height: 1.2;
+
+        @include tablet {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
     }
 
     &__item {
@@ -142,6 +232,10 @@
         flex-direction: column;
         padding-bottom: 120px;
         position: relative;
+
+        @include tablet {
+            padding-bottom: 80px;
+        }
     }
 
     &__subtitle {
@@ -149,12 +243,21 @@
         margin-bottom: 15px;
         height: 42px;
         line-height: 1.2;
+
+        @include tablet {
+            font-size: 16px;
+            height: auto;
+        }
     }
 
     &__icon {
         width: auto;
         height: 128px;
         object-fit: contain;
+
+        @include tablet {
+            height: 60px;
+        }
     }
 
     &__arrow {
@@ -162,6 +265,11 @@
         height: 58px;
         object-fit: contain;
         position: absolute;
+
+        @include tablet {
+            width: 35px;
+            height: 35px;
+        }
 
         &.to-bottom {
             transform: rotate(90deg);
@@ -192,8 +300,42 @@
             bottom: 30px;
         }
 
-        &_bottom {
-            bottom: 30px;
+        &_left {
+            top: 30%;
+            left: -30px;
+        }
+
+        @include netbook {
+            &.mobile-right {
+                right: -30px;
+                top: 30%;
+            }
+
+            &.mobile-to-right {
+                transform: rotate(0deg);
+            }
+
+            &.mobile-bottom {
+                bottom: 30px;
+                right: inherit;
+                top: inherit;
+                left: inherit;
+            }
+
+            &.mobile-to-bottom {
+                transform: rotate(90deg);
+            }
+
+            &.mobile-left {
+                bottom: inherit;
+                right: inherit;
+                top: 30%;
+                left: -30px;
+            }
+
+            &.mobile-to-left {
+                transform: rotate(180deg);
+            }
         }
     }
 }
@@ -205,11 +347,21 @@
     position: relative;
     overflow: hidden;
 
+    @include tablet {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     &-icon {
         position: absolute;
         right: 0;
         width: auto;
         height: 700px;
+
+        @include tablet {
+            top: 50px;
+            height: 550px;
+        }
     }
 
     &__title {
@@ -218,6 +370,10 @@
         text-align: center;
         margin-bottom: 60px;
         color: white;
+
+        @include tablet {
+            font-size: 24px;
+        }
     }
 }
 
@@ -239,30 +395,313 @@
             width: 100%;
             font-size: 24px;
             font-weight: bold;
+
+            @include tablet {
+                font-size: 16px;
+                padding: 10px 15px;
+                line-height: 1.2;
+            }
         }
 
         &_icon {
             border: 1px solid $yellow;
             min-width: 76px;
-            min-height: 76px;
+            min-height: auto;
             max-width: 76px;
-            max-height: 76px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 15px;
             cursor: pointer;
             margin-left: 20px;
+            background-color: $black;
+
+            @include tablet {
+                min-width: 50px;
+                min-height: auto;
+                max-width: 50px;
+                margin-left: 8px;
+            }
 
             &_img {
                 width: 30px;
                 height: 30px;
                 transform: rotate(90deg);
             }
+
+            &.active {
+                transform: rotate(180deg);
+            }
         }
 
         &_content {
+            border: 1px solid $yellow;
+            border-radius: 15px 0 15px 15px;
+            margin-top: 15px;
+            color: white;
+            background-color: $black;
+            position: relative;
             display: none;
+            padding: 20px 30px;
+
+            @include tablet {
+                padding: 10px 20px;
+            }
+
+            /* max-height: 0;
+            padding: 0;
+            transition: max-height padding 300ms ease; */
+
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: -35px;
+                right: -1px;
+                width: 76px;
+                height: 35px;
+                background-color: $black;
+                border-left: 1px solid $yellow;
+                border-right: 1px solid $yellow;
+
+                @include tablet {
+                    width: 50px;
+                    top: -34.5px;
+                }
+            }
+
+            &.content-transition {
+                display: block;
+                /* max-height: 1500px;
+                padding: 20px 30px;
+                transition: max-height 300ms ease; */
+            }
         }
+    }
+}
+
+.comments {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid $yellow;
+
+    @include tablet {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &-icon {
+        position: absolute;
+        left: 0;
+        width: auto;
+        height: 500px;
+    }
+
+    &__block {}
+
+    &__item {
+        width: 100%;
+        max-width: 720px;
+        padding: 15px;
+        border-width: 0px 0px 1px 1px;
+        border-style: solid;
+        border-color: #EEC709;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        background-color: $black;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        &_img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        &_name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 14px;
+            margin-right: 14px;
+            line-height: 1;
+        }
+
+        &_date {
+            color: $grey;
+            font-size: 14px;
+            line-height: 1;
+            margin-top: 5px;
+        }
+
+        &_content {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        &_reply {
+            position: absolute;
+            right: 0;
+        }
+
+        &-reply {
+            margin-left: 100px;
+            position: relative;
+
+            &::before {
+                content: "";
+                background-image: url('../img/icon/replied.svg');
+                background-repeat: no-repeat;
+                position: absolute;
+                left: -80px;
+                top: 30px;
+                width: 60px;
+                height: 60px;
+                background-size: contain;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.cook {
+    max-width: 1140px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid $yellow;
+    background-color: $black;
+
+    &.active {
+        display: flex;
+    }
+
+    &__text {
+        font-size: 20px;
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        padding: 3px 15px;
+        line-height: 1.2;
+        margin-left: 30px;
+        font-weight: normal;
+        background-color: $yellow;
+        color: $black;
+    }
+}
+
+.main-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #00000080;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        display: flex;
+    }
+
+    &__block {
+        background-color: $black;
+        margin-bottom: 100px;
+        width: 90%;
+        max-width: 520px;
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        border: 1px solid $yellow;
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__form {
+        &_info {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_value {
+            width: 100%;
+            max-width: 190px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        &_arrow {
+            width: 32px;
+            height: 32px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        &_icon {
+            width: auto;
+            height: 50px;
+            margin-right: 30px;
+        }
+    }
+
+    &__buttons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+
+        &_icon {
+            margin-left: 15px;
+            filter: invert(75%) sepia(58%) saturate(2177%) hue-rotate(7deg) brightness(107%) contrast(93%);
+        }
+
+        &:hover &_icon {
+            filter: none;
+        }
+    }
+
+    &__title {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+
+    &__success {
+        height: 140px;
+        margin-top: 25px;
     }
 }

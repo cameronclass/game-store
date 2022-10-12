@@ -1,3 +1,11 @@
 .i-favicon {
     @include icon(url("../../img/favicon.png"), 20px, 20px)
 }
+
+.input-status-true {
+    @include icon(url("../img/icon/true.svg"), 28px, 28px);
+}
+
+.input-status-false {
+    @include icon(url("../img/icon/false.svg"), 28px, 28px);
+}

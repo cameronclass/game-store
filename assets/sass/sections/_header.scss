@@ -1,6 +1,5 @@
 .header {
     background-color: $black;
-    padding-bottom: 30px;
     padding-top: 20px;
 
     &__logo {
@@ -15,12 +14,20 @@
         font-family: $font-logo;
         line-height: 1.2;
 
+        @include tablet {
+            font-size: 12px;
+        }
+
         &:hover {
             color: white;
         }
 
         &_img {
             width: 40px;
+
+            @include tablet {
+                width: 25px;
+            }
         }
 
         &_block {
@@ -50,11 +57,20 @@
             font-size: 28px;
             font-weight: bold;
             margin: 0;
+
+            @include tablet {
+                font-size: 16px;
+            }
         }
 
         &_second {
             color: white;
             font-size: 24px;
+
+            @include tablet {
+                font-size: 14px;
+                margin-top: 5px;
+            }
         }
     }
 
@@ -75,6 +91,11 @@
             height: 34px;
             object-fit: contain;
             margin-bottom: 8px;
+
+            @include tablet {
+                width: 20px;
+                height: 20px;
+            }
         }
 
         &_text {
@@ -88,12 +109,23 @@
             font-size: 18px;
             font-weight: bold;
             line-height: 1;
+
+            @include tablet {
+                font-size: 16px;
+            }
         }
 
         &_content {
             font-size: 14px;
             height: 20px;
+            line-height: 1.2;
+
+            @include tablet {
+                font-size: 12px;
+                height: 25px;
+            }
         }
     }
+
 
 }

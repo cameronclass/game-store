@@ -38,8 +38,8 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
+      <div class="row bordered pb-4">
+        <div class="col-lg-3 col-5 order-1 order-lg-1">
           <a href="#" class="header__logo">
             <img class="header__logo_img" src="assets/img/logo.svg" alt="">
             <span class="header__logo_block">
@@ -48,13 +48,13 @@
             </span>
           </a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-4 mt-lg-0 col-12 order-3 order-lg-2">
           <div class="header__title">
             <h1 class="header__title_main">Надежное пополнение <span class="yellow-text">Steam</span> аккаунта</h1>
             <span class="header__title_second">Или вернем деньги!</span>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-7 order-2 order-lg-3">
           <div class="header__review">
             <div class="header__review_block">
               <img src="assets/img/icon/positive.svg" class="header__review_icon">
@@ -63,7 +63,7 @@
                 <span class="header__review_content">Довольных клиентов</span>
               </div>
             </div>
-            <div class="header__review_block ms-4">
+            <div class="header__review_block ms-2 ms-lg-4">
               <img src="assets/img/icon/money.svg" class="header__review_icon">
               <div class="header__review_text">
                 <span class="header__review_number">259</span>
@@ -126,9 +126,18 @@
           <form action="#" class="form-main">
             <div class="form-main__block">
               <input class="input input-big" type="text" required placeholder="Введите имя аккаунта в Steam (не имя пользователя)">
+              <!-- input-status-true input-status-false -->
+              <span class="input-status input-status-false"></span>
+              <button type="button" aria-describedby="tooltip" class="form__badge tooltip-btn">
+                <img src="assets/img/icon/question.svg" alt="">
+              </button>
+              <div class="tooltip-content" role="tooltip">Не никнейм, не ссылка, а именно аккаунт, с которого входите в Steam</div>
             </div>
             <div class="form-main__block mb-4">
-              <button type="button" class="button form-main__button">Проверка аккаунта</button>
+              <button type="button" class="button form-main__button">
+                <span>Проверка аккаунта</span>
+                <img class="button__hovered form-main__button_icon" src="assets/img/icon/steam-button.svg" alt="">
+              </button>
             </div>
             <div class="form-main__money form-main__block">
               <div class="form-main__money_block">
@@ -154,7 +163,7 @@
               <span>*Комиссия: 50р - 10%, 100р – 9%, 200р – 8%, 500р – 7%, 1000р – 6%</span>
             </div>
             <div class="form-main__submit form-main__block mt-5">
-              <button type="submit" class="button form-main__submit_btn">Пополнить</button>
+              <button type="submit" data-target="#money" class="button form-main__submit_btn">Пополнить</button>
             </div>
           </form>
         </div>
@@ -165,38 +174,38 @@
       <img class="how-works-icon" src="assets/img/icon/dots-top.svg" alt="">
       <div class="container z-index-top">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-6 order-lg-1 order-2">
             <div class="how-works__item">
               <div class="how-works__subtitle">Вы оплачиваете <b>пополнение</b></div>
               <img class="how-works__icon" src="assets/img/icon/pay-money.svg" alt="">
-              <img class="how-works__arrow how-works__arrow_bottom to-bottom" src="assets/img/icon/arrow-right.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_bottom to-bottom mobile-to-right mobile-right" src="assets/img/icon/arrow-right.svg" alt="">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-12 order-lg-2 order-1">
             <div class="how-works__title">Как это <span class="yellow-text">работает</span>?</div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-6 order-lg-3 order-6">
             <div class="how-works__item">
               <div class="how-works__subtitle">Steam зачисляет деньги на аккаунт</div>
               <img class="how-works__icon" src="assets/img/icon/gamepad.svg" alt="">
-              <img class="how-works__arrow how-works__arrow_bottom to-top" src="assets/img/icon/arrow-right.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_left to-right mobile-left mobile-to-left" src="assets/img/icon/arrow-right.svg" alt="">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-6 order-lg-4 order-3">
             <div class="how-works__item">
               <div class="how-works__subtitle">Мы <b>принимаем</b> средства в банке РФ</div>
               <img class="how-works__icon" src="assets/img/icon/bank.svg" alt="">
-              <img class="how-works__arrow how-works__arrow_right to-right" src="assets/img/icon/arrow-right.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_bottom to-top mobile-to-bottom mobile-bottom" src="assets/img/icon/arrow-right.svg" alt="">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-6 order-lg-5 order-4">
             <div class="how-works__item">
               <div class="how-works__subtitle"><b>Отправляем</b> средства в банк Азии</div>
               <img class="how-works__icon" src="assets/img/icon/pagoda.svg" alt="">
-              <img class="how-works__arrow how-works__arrow_right to-right" src="assets/img/icon/arrow-right.svg" alt="">
+              <img class="how-works__arrow how-works__arrow_right to-right mobile-bottom mobile-to-bottom" src="assets/img/icon/arrow-right.svg" alt="">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-6 order-lg-6 order-5">
             <div class="how-works__item">
               <div class="how-works__subtitle">Банк Азии зачисляет средства на банковский счет <b>Steam</b></div>
               <img class="how-works__icon" src="assets/img/icon/steam.svg" alt="">
@@ -207,7 +216,7 @@
       </div>
     </section>
     <!-- Часто задаваемые вопросы -->
-    <section class="faq">
+    <section class="faq bordered">
       <img class="faq-icon" src="assets/img/icon/line.svg" alt="">
       <div class="container z-index-top">
         <h2 class="faq__title">Часто задаваемые <span class="yellow-text">вопросы</span></h2>
@@ -225,13 +234,56 @@
 
           <div class="accordion__item">
             <div class="accordion__item_header">
-              <div class="accordion__item_title">Title 1</div>
+              <div class="accordion__item_title">Через какое время будет пополнен баланс?</div>
               <span class="accordion__item_icon"><img class="accordion__item_icon_img" src="assets/img/icon/arrow-right.svg" alt=""></span>
             </div>
             <div class="accordion__item_content">
-              Content 1
+              Моментально после, ващ баланс будет пополнен, но не исключаем случаи, когда баланс может прийти с задержками, просьба не волноваться и дождаться, в крайнем случае обратится в “Техничискую поддержку”
             </div>
           </div>
+
+          <div class="accordion__item">
+            <div class="accordion__item_header">
+              <div class="accordion__item_title">Через какое время будет пополнен баланс?</div>
+              <span class="accordion__item_icon"><img class="accordion__item_icon_img" src="assets/img/icon/arrow-right.svg" alt=""></span>
+            </div>
+            <div class="accordion__item_content">
+              Моментально после, ващ баланс будет пополнен, но не исключаем случаи, когда баланс может прийти с задержками, просьба не волноваться и дождаться, в крайнем случае обратится в “Техничискую поддержку”
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Комментарии -->
+    <section class="comments">
+      <img class="comments-icon" src="assets/img/icon/dots-full.svg" alt="">
+      <div class="container z-index-top">
+        <div class="comments__block">
+          <div class="comments__item">
+            <div class="comments__item_header">
+              <img class="comments__item_img" src="assets/img/profile.jpg">
+              <div class="comments__item_name">Igoryok</div>
+              <div class="comments__item_date">28 сентября 2020 в 16:25</div>
+              <button type="button" class="comments__item_reply"><img src="assets/img/icon/reply.svg" alt=""></button>
+            </div>
+            <div class="comments__item_content">
+              Круто! Всё пришло очень быстро, наконец опустошил список желаемого!
+            </div>
+          </div>
+          <div class="comments__item comments__item-reply">
+            <div class="comments__item_header">
+              <img class="comments__item_img" src="assets/img/profile.jpg">
+              <div class="comments__item_name">Igoryok</div>
+              <div class="comments__item_date">28 сентября 2020 в 16:25</div>
+              <button type="button" class="comments__item_reply"><img src="assets/img/icon/reply.svg" alt=""></button>
+            </div>
+            <div class="comments__item_content">
+              Круто! Всё пришло очень быстро, наконец опустошил список желаемого!
+            </div>
+          </div>
+        </div>
+        <div class="comments__form">
 
         </div>
       </div>
@@ -239,8 +291,125 @@
   </main>
   <!-- Footer -->
   <footer class="footer">
-
+    <div class="container">
+      <div class="row bordered pb-4">
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+          <a href="#" class="header__logo">
+            <img class="header__logo_img" src="assets/img/logo.svg" alt="">
+            <span class="header__logo_block">
+              <span class="header__logo_title">spartagames</span>
+              <span class="yellow-text">store</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+          <div class="footer__links">
+            <a href="#" class="footer__menu">Как работает?</a>
+            <a href="#" class="footer__menu">Вопросы</a>
+            <a href="#" class="footer__menu">Пополнение</a>
+            <a href="#" class="footer__menu">Отзывы</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+          <div class="footer__links">
+            <a href="#" class="footer__menu">О компании</a>
+            <a href="#" class="footer__menu">Поддержка</a>
+            <a href="#" class="footer__menu">Cookies</a>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-lg-8">
+          <div class="footer__rights">
+            <div class="footer__text">© Все права защищены 2022</div>
+            <a href="" class="footer__link">Политика конфиденциальности</a>
+            <a href="" class="footer__link">Публичная оферта</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer__pay">
+            <img class="footer__pay_item" src="assets/img/icon/visa.svg" alt="Visa">
+            <img class="footer__pay_item" src="assets/img/icon/mir.svg" alt="Mir">
+            <img class="footer__pay_item" src="assets/img/icon/qiwi.svg" alt="QIWI">
+            <img class="footer__pay_item" src="assets/img/icon/mastercard.svg" alt="MasterCard">
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- Cookies -->
+  <div class="cook">
+    <span class="cook__text">Мы собираем лишь необходимые cookie.</span>
+    <button type="button" class="button cook__btn">Принять</button>
+  </div>
+
+  <!-- Modals -->
+  <!-- Чтобы показать модальное окно Добавляем класс active на main-modal -->
+  <div id="money" class="main-modal">
+    <div class="main-modal__block">
+      <button class="main-modal__close"><img src="assets/img/icon/close.svg" alt=""></button>
+      <form class="main-modal__form">
+        <div class="main-modal__form_info">
+          <input type="number" disabled value="200" class="input main-modal__form_value">
+          <img src="assets/img/icon/arrow-right.svg" class="main-modal__form_arrow">
+          <img src="assets/img/icon/steam.svg" class="main-modal__form_icon">
+        </div>
+
+        <div class="form-check mt-5 mb-3">
+          <input required class="form-check-input" type="checkbox" value="" id="pravila">
+          <label class="form-check-label" for="pravila">
+            я подтверждаю, что ознакомлен с правилами оферты
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input required class="form-check-input" type="checkbox" value="" id="proverka">
+          <label class="form-check-label" for="proverka">
+            я подтверждаю, что корректно указал свое имя аккаунта
+          </label>
+        </div>
+
+        <div class="main-modal__buttons">
+          <button type="submit" class="button main-modal__button">
+            <span>Оплата Qiwi</span>
+            <img class="button__icon main-modal__button_icon" src="assets/img/icon/qiwi-black.svg" alt="">
+          </button>
+          <button type="submit" class="button main-modal__button">
+            <span>Оплата картой</span>
+            <img class="button__icon main-modal__button_icon" src="assets/img/icon/card-black.svg" alt="">
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div id="success" class="main-modal">
+    <div class="main-modal__block">
+      <button class="main-modal__close"><img src="assets/img/icon/close.svg" alt=""></button>
+      <div class="main-modal__title">Поздравляем! Оплата прошла <span class="green-text">успешно!</span></div>
+      <img class="main-modal__success" src="assets/img/icon/success.svg" alt="">
+      <div class="d-flex justify-content-center mt-4">
+        <input type="number" disabled value="200" class="input main-modal__form_value">
+      </div>
+    </div>
+  </div>
+
+  <div id="denied" class="main-modal">
+    <div class="main-modal__block">
+      <button class="main-modal__close"><img src="assets/img/icon/close.svg" alt=""></button>
+      <div class="main-modal__title">Упс... Что-то пошло не <span class="red-text">так...</span></div>
+      <img class="main-modal__success" src="assets/img/icon/denied.svg" alt="">
+      <div class="d-flex justify-content-center mt-4">
+        <button class="button">Попробовать ещё раз</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <!-- Scripts -->
   <script src="assets/js/libs.min.js"></script>
   <script src="assets/js/main.js"></script>

@@ -2,7 +2,73 @@
     color: $yellow;
 }
 
+.green-text {
+    color: $green;
+}
+
+.red-text {
+    color: $red;
+}
+
 .z-index-top {
     position: relative;
     z-index: 2;
+}
+
+.bordered {
+    border-bottom: 1px solid $yellow;
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+
+    &-input {
+        margin-right: 10px;
+        background-color: transparent;
+        border: 1px solid $yellow;
+        min-width: 20px;
+        min-height: 20px;
+
+        &:checked {
+            outline: none;
+            box-shadow: none;
+            background-color: transparent;
+            border-color: $yellow;
+            color: $black;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: $yellow;
+        }
+    }
+
+    &-label {
+        font-size: 16px;
+        margin-top: 3px;
+        color: white;
+        line-height: 1.2;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+}
+
+.tooltip-content {
+    padding: 12px;
+    font-size: 14px;
+    color: white;
+    border: 1px solid $yellow;
+    background-color: $black;
+    border-radius: 5px;
+    max-width: 200px;
+    width: 95%;
+    margin-bottom: 10px;
+    z-index: 10;
+    position: relative;
+    display: none;
+}
+
+.tooltip-content[data-show] {
+    display: block;
 }
