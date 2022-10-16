@@ -705,3 +705,89 @@
         margin-top: 25px;
     }
 }
+
+/* Comment Plugin */
+.ql-editor.ql-blank::before {
+    font-style: normal !important
+}
+
+#wpdcom .ql-editor::before {
+    color: $grey;
+}
+
+#wpdcom .ql-container {
+    background: #191917;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #EEC709 !important;
+    border-radius: 15px;
+}
+
+#wpdcom .wpd-prim-button {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 12px 20px;
+    box-shadow: none;
+    border-radius: 14px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #eec709;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #161614;
+    line-height: 1;
+    letter-spacing: none;
+    font-family: $font;
+
+    &:hover {
+        background-color: $yellow;
+        color: $black;
+    }
+}
+
+#wpdcom .wpd-comment .wpd-comment-wrap {
+    border: 1px solid $yellow;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#wpdcom .wpd-comment-header .wpd-comment-author {
+    color: white !important;
+    letter-spacing: none;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+#wpdcom .wpd-thread-head .wpd-thread-info {
+    color: white;
+}
+
+#comments,
+#wpdcom .wpd-sbs-toggle {
+    color: white;
+}
+
+
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="text"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="email"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="url"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="color"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="date"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="datetime"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="datetime-local"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="month"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="number"],
+#wpdcom .wpd-form-row .wpdiscuz-item input[type="time"],
+#wpdcom textarea,
+#wpdcom select {
+    background-color: $black;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #EEC709 !important;
+}
